@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>login</title>
+	<style type="text/css">
+		
+	div{
+		border: 2px solid black;
+		background: black;
+		height: 650px;
+		width: 500px;
+		border-radius: 10px;
+		margin:auto;
+		margin-top: 50px;
+		color: white;
+		outline: 4px outset cyan;
+	}
+	div form label{
+		display:block;
+		padding: 20px 0px;
+	}
+	div form {
+		padding: 30px;
+		font-size:20px;
+		text-transform: capitalize;
+	}
+	div form input[type=text]{
+		width: 100%;
+		padding: 2px 5px;
+		outline: none;
+		font-size: 18px;
+		background: transparent;
+		border: none;
+		border-bottom: 2px solid cyan;
+		border-radius: 2px;
+	}
+	div form input[type=text]:focus{
+		background: white;
+		border: 2px solid cyan;
+	}
+	div form input[type=tel]{
+		margin-top:15px;
+		float: right;
+		padding: 5px;
+		font-size: 15px;
+		outline: none;
+		background: transparent;
+		border: none;
+		border-bottom: 2px solid cyan;
+		color: white;
+	}
+	div form button[type=send]{
+		margin-top:15px;
+		padding: 5px 10px;
+		font-size: 15px;
+		border-radius: 50px;
+		background: cyan;
+	
+	}
+		div form button[type=submit]{
+				display: flex;
+				margin-top: 40px;
+				border-radius: 30px;
+				padding: 10px 60px;
+				background: cyan;
+				margin-left: 100px;
+				font-size: 1.2rem;
+		}
+		
+</style>
+<body>
+	<div class="main">
+		<h1 align="center">Sign in form</h1>
+		<form>
+			<label for="name">enter your name:</label>
+			<input type="text" name="name" required>
+			<label for="fname">Enter your father name:</label>
+			<input type="text" name="fname">
+			<label for="tel">enter your mobile number:</label>
+			<input type="text" name="tel" maxlength="10" value="+91 " required>
+			<button type="send">Send Otp</button>
+			<input type="tel" name="otp" placeholder="Enter otp here" required>
+			<label for="text">Enter your email id:</label>
+			<input type="text" name="email" placeholder="xyz@gmail.com" required>
+			<button type="send">Send Otp</button>
+			<input type="tel" name="otp" placeholder="Enter otp here" required>
+			<button type="submit">Submit</button>
+
+		</form>
+	</div>
+
+</body>
+</html>

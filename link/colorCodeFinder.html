@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        nav {
+            background-color: black;
+            color: #ecf0f1;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #ecf0f1;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            color: #3498db;
+        }
+
+        .hero-section {
+            background-color: rosybrown;
+            text-align: center;
+            padding: 50px;
+            color: #ecf0f1;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #colorPicker {
+            width: 80%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        #colorCode {
+            font-size: 24px;
+            margin-top: 10px;
+            color: #ecf0f1;
+        }
+
+        .contact-section {
+            background-color: #ecf0f1;
+            padding: 50px;
+            text-align: center;
+            color: #333;
+        }
+
+        .about-section {
+            background-color: #ecf0f1;
+            padding: 50px;
+            text-align: center;
+            color: #333;
+        }
+
+        .testimonials-section {
+            background-color: #3498db;
+            text-align: center;
+            padding: 50px;
+            color: #ecf0f1;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .testimonial {
+            margin: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #2980b9;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            color: #ecf0f1;
+        }
+
+        .testimonial img {
+            width: 80px;
+            border-radius: 50%;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .fa {
+            margin-right: 5px;
+        }
+    </style>
+    <title>Color Code Finder</title>
+</head>
+<body>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#testimonials">Testimonials</a>
+    </nav>
+
+    <div id="home" class="hero-section">
+        <h1>Welcome to Color Code Finder</h1>
+        <i class="fas fa-paint-brush fa-3x fade-in"></i>
+        <div class="color-container">
+            <input type="color" id="colorPicker" value="#ff0000">
+            <p id="colorCode">#ff0000</p>
+        </div>
+    </div>
+
+    <div id="about" class="about-section">
+        <h2>About Us</h2>
+        <p>Color Code Finder is a tool that simplifies the process of finding color codes for your design projects.</p>
+        <i class="fas fa-info-circle fa-2x fade-in"></i>
+    </div>
+
+    <div id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>Have questions or feedback? Reach out to us!</p>
+        <i class="fas fa-envelope fa-2x fade-in"></i>
+        <p>Email: info@colorcodefinder.com</p>
+    </div>
+
+    <div id="testimonials" class="testimonials-section">
+        <h2>Testimonials</h2>
+        <div class="testimonial fade-in">
+            <img src="https://static.vecteezy.com/system/resources/previews/030/396/740/large_2x/a-business-woman-working-on-a-laptop-in-a-professional-modern-office-generative-ai-photo.jpeg" alt="User 1">
+            <p>"This color code finder is amazing! It has made my design process much easier."</p>
+            <p>- Jenny</p>
+        </div>
+        <div class="testimonial fade-in">
+            <img src="https://wallpapers.com/images/hd/professional-profile-pictures-1276-x-1762-075347emr82ph3hj.jpg" alt="User 2">
+            <p>"I love the simplicity and functionality of this tool. Highly recommended!"</p>
+            <p>- Jane Smith</p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const colorPicker = document.getElementById('colorPicker');
+            const colorCode = document.getElementById('colorCode');
+
+            colorPicker.addEventListener('input', function () {
+                const selectedColor = colorPicker.value;
+                colorCode.innerText = selectedColor;
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rare Animal Explorer</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: green;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: black;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .animal-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .animal-card {
+            width: 300px;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .animal-card:hover {
+            transform: scale(1.05);
+        }
+
+        .animal-image {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>RareWildlifeDiscovery
+</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <main>
+        <h2>World's Most Rare Animals</h2>
+        <div class="animal-container">
+            <div class="animal-card">
+                <img class="animal-image" src="https://cdn.britannica.com/22/125622-050-E4DA94ED/Albino-axolotl.jpg" alt="Axolotl">
+                <h3>Axolotl</h3>
+                <p>Species: Ambystoma mexicanum</p>
+                <p>The axolotl is a neotenic salamander, native to Mexico. It is known for its remarkable ability to regenerate lost body parts, including limbs and vital organs.</p>
+            </div>
+
+            <div class="animal-card">
+                <img class="animal-image" src="https://i.natgeofe.com/k/b33a3db5-c82c-402f-90a5-0b11494d7739/quokka-OG_4x3.jpg
+" alt="Quokka">
+                <h3>Quokka</h3>
+                <p>Species: Setonix brachyurus</p>
+                <p>The quokka is a small marsupial native to Australia. It is often referred to as the "world's happiest animal" due to its cheerful appearance.</p>
+            </div>
+
+            <div class="animal-card">
+                <img class="animal-image" src="https://d1jyxxz9imt9yb.cloudfront.net/medialib/3600/image/s768x1300/AdobeStock_103556495_343184_reduced.jpg" alt="Pangolin">
+                <h3>Pangolin</h3>
+                <p>Species: Various</p>
+                <p>Pangolins are unique mammals covered in scales made of keratin. They are the only mammals with this adaptation and are often referred to as "scaly anteaters."</p>
+            </div>
+
+            <div class="animal-card">
+                <img class="animal-image" src="https://www.euclidlibrary.org/sites/default/files/tickles/narwhal%20under%20the%20sea.jpg" alt="Narwhal">
+                <h3>Narwhal</h3>
+                <p>Species: Monodon monoceros</p>
+                <p>The narwhal is a toothed whale known for its long spiral tusk, which is actually an elongated tooth. It is native to Arctic waters.</p>
+            </div>
+
+            <div class="animal-card">
+                <img class="animal-image" src="https://rajajinationalpark.org/wp-content/uploads/indian-flying-fox.jpg" alt="Flying Fox">
+                <h3>Flying Fox</h3>
+                <p>Species: Pteropus</p>
+                <p>Flying foxes, also known as fruit bats, are large bats with a fox-like face. They play a crucial role in pollination and seed dispersal in tropical ecosystems.</p>
+            </div>
+
+            <div class="animal-card">
+                <img class="animal-image" src="https://media.istockphoto.com/id/518557162/photo/fossa-on-tree.jpg?s=612x612&w=0&k=20&c=G_kEbAa4yNOL2lpd03WMEKXTNL-_svz5yWJFLitmLIQ=" alt="Fossa">
+                <h3>Fossa</h3>
+                <p>Species: Cryptoprocta ferox</p>
+                <p>The fossa is a carnivorous mammal endemic to Madagascar. It is the largest carnivore on the island and has a slender, cat-like appearance.</p>
+            </div>
+
+            
+
+            <div class="animal-card">
+                <img class="animal-image" src="https://optimise2.assets-servd.host/maniacal-finch/production/animals/okapi-01-01.jpg?w=1200&h=1200&auto=compress%2Cformat&fit=crop&dm=1658949993&s=8e5399597eb676e34b375b36dec770c7" alt="Okapi">
+                <h3>Okapi</h3>
+                <p>Species: Okapia johnstoni</p>
+                <p>The okapi is a forest giraffe native to the Democratic Republic of the Congo. It is known for its zebra-like stripes on its legs.</p>
+            </div>
+
+            <div class="animal-card">
+                <img class="animal-image" src="https://www.thoughtco.com/thmb/eKLFvmGD0vM3Dd8G-G7rofVHR5M=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/kenya--masai-mara-game-reserve--aardvark--orycteropus-afer--154773750-5ab00f47a9d4f90037e6ad38.jpg" alt="Aardvark">
+                <h3>Aardvark</h3>
+                <p>Species: Orycteropus afer</p>
+                <p>The aardvark is a nocturnal mammal native to Africa. It has a long snout and feeds primarily on ants and termites.</p>
+            </div>
+
+            <div class="animal-card">
+                <img class="animal-image" src="https://t4.ftcdn.net/jpg/03/82/98/11/360_F_382981144_uoHu513NcuYa1ZLT9TF8YAc9s9Z38gRs.jpg" alt="Quokka">
+                <h3>Quokka</h3>
+                <p>Species: Setonix brachyurus</p>
+                <p>The quokka is a small marsupial native to Australia. It is often referred to as the "world's happiest animal" due to its cheerful appearance.</p>
+            </div>
+
+            <div class="animal-card">
+                <img class="animal-image" src="https://cdn.britannica.com/72/227472-050-B054D646/Malayan-colugo-Galeopterus-variegatus.jpg" alt="Flying Lemur">
+                <h3>Flying Lemur</h3>
+                <p>Species: Cynocephalus variegatus</p>
+                <p>The flying lemur, also known as the colugo, is a gliding mammal found in Southeast Asia. Despite its name, it is not a lemur and does not fly.</p>
+        </div>
+    </main>
+    
+
+    <footer>
+        &copy; 2024 Rare Animal Explorer. All rights reserved.
+    </footer>
+
+</body>
+
+</html>
